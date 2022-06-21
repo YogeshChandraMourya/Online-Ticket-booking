@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+   <title>Booking form</title>
+   <link rel="stylesheet" type="text/css" href="booking.css">
+   <link rel = "icon" href = "images/lg.jpg"type = "image/x-icon">
+   <style>
+       body{
+        background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://c1.wallpaperflare.com/preview/742/704/32/admission-coupon-admit-buy.jpg);
+            background-repeat:no-repeat;
+            background-size: cover;
+            color: black;
+       }
+
+            .l1{
+                padding: 2% 8%;
+                background-color: rgb(80,135,172);
+                border-radius: 12px;
+                font-size: 25px;
+                font-family: sans-serif;    
+            }
+       
+   </style>
+   <script>
+       function disp()
+       {
+            var a = Number(document.getElementById("c1").value);
+            var b = Number(document.getElementById("c2").value);
+            var c = Number(document.getElementById("c3").value);
+            d = document.getElementById("res");
+            var ans="";
+            if (a!=null && b!=null && c!=null)
+            {
+                if(a ==(b+c))
+                {
+                    ans=ans+"Total Count<br>"+a+"Child Tickets:  "+b+"<br>Adult Tickets: "+c;
+                }
+                else{
+                    ans=ans+"Total number of tickets count should be equal to child and adults ticket count";
+                }
+            }
+            else{
+                ans=ans+"Enter all the required fields";
+            }
+            d.innerHTML=ans;
+       }
+   </script>
+</head>
+<body >
+    <div class="bg-modal">
+    <div class="booking-page">
+        <div class="close"><a href="ticket_avail.html">+</a></div>
+    <h1>BOOKING FORM</h1><br>
+    <p id="res"></p>
+    <form action="payment.html" method="post">
+        <p>NO.OF.TICKETS:</p>
+        <input type = "number" name = "No.of.Tickets" placeholder="" id="c1"><br><br>
+        <p>NO.OF.ADULTS:</p>
+        <input type = "number" name = "No.of.Adults" placeholder="" id="c2"><br><br>
+        <p>NO.OF.CHILDREN:</p>
+        <input type = "number" name = "No.of.Children" placeholder="" id="c3"><br><br>
+        
+        <button type = "submit" class="l1" name="booking">Book</button> 
+        <a href="E-Ticket Booking System.html"><input type="button" value="Cancel" class="l1"></a>
+    </form>
+    
+    </div>
+</div>
+</body>
+</html>

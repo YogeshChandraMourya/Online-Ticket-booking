@@ -1,0 +1,77 @@
+<html>
+<head>
+<title> admin form </title>
+
+<style>
+body
+{
+
+    background:lightblue;
+}
+.contact-form{
+max-width:350px;
+margin:auto;
+border-radius:5px;
+background:#96bb72;
+padding:20px;
+}
+
+input[type=text],select
+{
+width:100%;
+padding:12px 20px;
+margin:8px 0;
+display:inline-block;
+border:1px solid  ;
+border-radius : 4px;
+box-sizing:border-box;
+}
+
+input[type=submit]
+{
+width:100%;
+background:purple;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+border-radius:4px;
+cursor:pointer;
+}
+input[type=submit]:hover
+{
+background:gray;
+}
+
+input[type=number]{
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+    <img src="logo.png" height=160 width=300 alt="not possible" align="left">
+<div class="contact-form">
+<form>
+<label for="State">Name of the Place: </label>
+<input type="text" size="30" maxlength="40">
+<br>
+<br>
+Location <input type="text" size =30 maxlength=40>
+<br>
+Available time From<input type="time">Am to <input type="time" name="" id="">Pm
+<br>
+<br>
+Ticket Cost of child <input type= "number" min=100 maxlength=5000>
+<br>
+<br>
+Ticket Cost of adult <input type="number" min=100 maxlength=5000>
+<br>
+<br>
+Availabe tickets <input type="number" min=10 maxlength=500>
+
+<input type="submit" value="Update">
+
+</form>
+</div>
+</body>
+</html>

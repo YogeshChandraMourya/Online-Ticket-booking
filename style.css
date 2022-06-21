@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-seriff;
+}
+.wrapper{
+    width: 1170px;
+    margin:auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("https://wallpaperaccess.com/full/2337801.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position:relative;
+}
+.nav-area{
+    float:right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display:inline-block;
+}
+.nav-area li a{
+    font-style: underline;
+    color:yellow;
+    text-decoration: none;
+    padding:5px 20px;
+    font-family:poppins;
+    font-size:27px;
+}
+.nav-area li a:hover{
+    background:lightgray;
+    color:black;
+}
+.logo img{
+    width:300px;
+    float:left;
+    height:175px;
+}
+.welcome-text{
+    position:absolute;
+    width:600px;
+    height:275px;
+    margin:20% 30%;
+    text-align:center;
+}
+.welcome-text h1{
+    position:absolute;
+    background: linear-gradient(to right,rgb(217, 255, 0),rgb(255, 0, 13));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align:center;
+    font-size:65px;
+}
+.welcome-text a{
+    border:1 px solid white;
+    padding:10px 25px;
+    text-decoration:none;
+    font-size:30px;
+    margin-top:320px;
+    display:inline-block;
+    color:brown;
+    background-color: bisque;
+}
+.welcome-text a:hover{
+    background:red;
+    color:white;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+footer a{
+    color:antiquewhite;
+}

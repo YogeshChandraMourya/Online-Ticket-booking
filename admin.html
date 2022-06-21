@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+   <title>E-Ticket Booking</title>
+   <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="logo.png"alt="">
+            </div>
+            <ul class="nav-area">
+                <li><a href="#section1">Home</a></li>
+                <li><a href="#section2">Add place</a></li>
+                <li><a href="#section3">Update Tickets</a></li>
+                <li><a href="#section4">Remove place</a></li>
+            </ul>
+        </div>
+        <div id="section1">
+            <h1>ADD PLACE</h1>
+            <div class="contact-form">
+                <form action="insert.php" method="POST">
+                <label for="State">Name of the Place: </label>
+                <input type="text" size="30" maxlength="40" name="place">
+                Location<input type="text" size =30 maxlength=40 name="loc">
+                <br>
+                <br> Available time From<input type="time" name="intime">Am 
+                <br>
+                <br>
+                Available time upto <input type="time" name="uptime" id="">Pm
+                <br>
+                <br>
+                Cost of ticket for Child<input type= "number" min=100 maxlength=5000 name="child">
+                <br>
+                <br>
+                Cost of ticket for Adult<input type= "number" min=100 maxlength=5000 name="adult">
+                <br>
+                <br>
+                Availabe tickets <input type="number" min=10 maxlength=500 name="ticket">
+                <button type = "submit" class="l1" name="sasd">UPDATE</button> 
+                </form>
+                </div>            
+        </div>
+        
+        <div id="section3">
+            <h1>UPDATE TICKETS</h1>
+            <div class="contact-form">
+                <form>
+                <label for="State">No.of.tickets available: </label>
+                <input type="text" size="30" maxlength="40">
+                <br>
+                <br>
+                <label for="State">No.of.tickets sold: </label>
+                <input type="text" size="30" maxlength="40">
+                <br>
+                <br>
+                <input type="Submit" value="Update">
+            </form>   
+            </div>
+        </div> 
+        <div id="section4">
+            <h1>REMOVE PLACE</h1>
+            <div class="contact-form">
+                <form>
+                    <center>
+                        <h2> Select a place to remove:</h2>
+                            <select>
+                            <option>Sri Venkateswara Swamy temple</option>
+                            <option>Kanaka Durga temple</option>
+                            <option>Golden temple</option>
+                            <option>Salar Jung Museum</option>
+                            <option>Indian Museum</option>
+                            <option>Nationnal Museum</option>
+                            </select>
+                    </center>
+                <input type="Submit" value="Update">
+            </form>   
+            </div>
+        </div> 
+        
+    </header>
+</body>
+</html>
